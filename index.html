@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OOP-Comarison</title>
+    <title>OOP Comparison</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+        }
+
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            border-radius: 2%;
+        }
+
+        th,
+        td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+            font-size: 20px;
+            border: 1px solid #000;
+            padding: 3px; 
+            text-align: left;
+            font-size: 20px;
+            height: 50px;
+            width: 25%; 
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>java, c++, python </h2>
+    <h1>Object-Oriented Programming Comparison</h1>
+    <h2>Java vs C++ vs Python</h2>
+
+
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Java</th>
+            <th>C++</th>
+            <th>Python</th>
+        </tr>
+        <tr>
+            <td>Inheritance</td>
+            <td><code>class SubClass extends Parent</code></td>
+            <td><code>class SubClass : public Parent</code></td>
+            <td><code>class SubClass(Parent)</code></td>
+        </tr>
+        <tr>
+            <td>Access Modifiers</td>
+            <td>มี ได้แก่ <code>public, private, protected</code></td>
+            <td>มี ได้แก่ <code>public, private, protected</code></td>
+            <td>ไม่มี acess modifiers</td>
+        </tr>
+        <tr>
+            <td>Memory Management</td>
+            <td>จัดการอัตโนมัติ (Garbage Collection)</td>
+            <td>จัดการเอง (<code>new</code> และ <code>delete</code>)</td>
+            <td>จัดการอัตโนมัติ (Garbage Collection)</td>
+        </tr>
+        <tr>
+            <td>Method Overloading</td>
+            <td>รองรับ</td>
+            <td>รองรับ</td>
+            <td>ไม่รองรับการทำโดยตรง แต่สามารถใช้ค่าพารามิเตอร์เริ่มต้นและ <code>*args</code></td>
+        </tr>
+        <tr>
+            <td>Method Overriding</td>
+            <td>รองรับ</td>
+            <td>รองรับ</td>
+            <td>รองรับ</td>
+        </tr>
+    </table>
+
+
 </body>
+
 </html>
